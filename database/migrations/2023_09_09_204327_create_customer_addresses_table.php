@@ -1,5 +1,5 @@
 <?php
-
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('city', 255);
             $table->string('state', 45)->nullable();
             $table->string('zipcode', 45);
-            $table->string('country_code', 45);
             $table->foreignId('customer_id')->references('id')->on('customers');
             $table->timestamps();
             $table->foreignId('country_code')->references('id')->on('countries');
