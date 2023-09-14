@@ -12,7 +12,10 @@ const count = ref(0);
 </script>
 
 <template>
-    {{ test }}
+
+    <h1 className="bg-slate-400">{{ msg }}</h1>
+
+ {{ test }}
 </template>
 
 <style scoped></style>
