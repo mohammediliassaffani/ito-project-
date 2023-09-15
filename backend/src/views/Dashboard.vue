@@ -1,13 +1,13 @@
 <template>
-   
+    <GuestLayout title="Dashboard">
         <h1>Dashboard</h1>
+    </GuestLayout>
+       
    
 </template>
 
-<script>
-    export default {
-        name: "Dashboard"
-    }
+<script setup>
+import GuestLayout from "../components/GuestLayout.vue";
 </script>
 
 <style>

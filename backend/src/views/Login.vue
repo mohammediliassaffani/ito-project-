@@ -1,5 +1,5 @@
 <template>
-    <GuestLayout title="Sing in to your accont">
+     <GuestLayout title="Sing in to your accont">
         <form class="mt-8 space-y-6" action="#" method="POST">
             <div>
                 <label
@@ -58,8 +58,7 @@
     </GuestLayout>
 </template>
 
-<script>
-import { LockClosedIcon } from "@heroicons/vue/solid";
+<script setup>
 import GuestLayout from "../components/GuestLayout.vue";
 </script>
 
