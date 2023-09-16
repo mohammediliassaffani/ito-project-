@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
+'
 import Dashboard from "../views/Dashboard.vue";
+
 import Login from "../views/Login.vue";
 import ResetPassword from "../views/ResetPassword.vue";
 import RequestPassword from "../views/RequestPassword.vue";
@@ -8,9 +10,10 @@ import MyApp from "../components/MyApp.vue";
 const routes = [
     {
         path: "/dashboard",
-        name: "dashboard",
+        name: "app.dashboard",
         component: Dashboard,
     },
+  
 
     {
         path: "/login",
@@ -37,6 +40,6 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
 });
 export default router;

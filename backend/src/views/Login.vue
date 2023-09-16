@@ -1,5 +1,6 @@
 <template>
-    <GuestLayout title="Sign in to your account" @submit="login">
+  <GuestLayout>
+    <form title="Sign in to your account" action="#" method="post">
       <div>
         <label
           for="email"
@@ -56,6 +57,7 @@
           Sign in
         </button>
       </div>
+    </form>
     </GuestLayout>
   </template>
   
@@ -63,9 +65,7 @@
   import { LockClosedIcon } from "@heroicons/vue/solid";
   import GuestLayout from "../components/GuestLayout.vue";
   
-  function login() {
-    console.log("Login"); // This should work now when the form is submitted
-  }
+  
   </script>
   
   <style></style>
