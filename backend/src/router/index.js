@@ -1,19 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-'
 import Dashboard from "../views/Dashboard.vue";
-
 import Login from "../views/Login.vue";
 import ResetPassword from "../views/ResetPassword.vue";
 import RequestPassword from "../views/RequestPassword.vue";
-import MyApp from "../components/MyApp.vue";
 
 const routes = [
     {
         path: "/dashboard",
-        name: "app.dashboard",
+        name: "dashboard",
         component: Dashboard,
     },
-  
 
     {
         path: "/login",
@@ -31,11 +27,6 @@ const routes = [
         component: RequestPassword,
     },
 
-    {
-        path: "/myapp",
-        name: "myapp",
-        component: MyApp,
-    },
 ];
 
 const router = createRouter({
