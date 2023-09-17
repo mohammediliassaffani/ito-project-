@@ -1,7 +1,7 @@
 <template>
-    <GuestLayout title="Dashboard">
+    
         <h1>Dashboard</h1>
-    </GuestLayout>
+    
        
    
 </template>
