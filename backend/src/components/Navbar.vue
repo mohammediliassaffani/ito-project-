@@ -1,19 +1,19 @@
 <template>
-    <header class="flex justify-between items-center py-4 h-14 shadow bg-white">
-        <button class="p-4 text-blue-800 rounded-r-full hover:bg-blue-200">
-            <MenuIcon class="w-8" />
+    <header class="flex justify-between items-center  h-10 shadow bg-white">
+        <button @click="emit('toggele-sidbar')" class="flex justify-between items-center text-blue-800 rounded-r-full transition-colors w-10 h-10 hover:bg-blue-200">
+            <MenuIcon class="w-18 m-2" />
         </button>
         <div class="pl-4">
             <Menu as="div" class="relative inline-block text-left">
                 <MenuButton
-                    class="flex items-center p-4 mr-0 rounded-l-full hover:bg-blue-200"
+                    class="flex items-center p-2 mr-0 rounded-l-full hover:bg-blue-200"
                 >
                     <img
                         src="https://robohash.org/stefan-one"
-                        class="rounded-full w-10 pr-1"
+                        class="rounded-full w-8 pr-1"
                         alt="Profil"
                     />
-                    <h4>iliass mohammed</h4>
+                    <h4 class=" text-blue-800" >iliass mohammed</h4>
                     <ChevronDownIcon
                         class="h-5 w-5 text-blue-800 hover:text-blue-800"
                         aria-hidden="true"
@@ -78,6 +78,8 @@
 import { MenuIcon, LogoutIcon, UserIcon } from "@heroicons/vue/outline";
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
+
+const emit = defineEmits(['toggele-sidbar'])
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,5 +1,5 @@
 <template>
-        <div class="w-[200px] bg-blue-800 text-white p-4 ">
+        <div class="w-[200px] transition-all bg-blue-800 text-white p-4 ">
 
             <router-link 
             :to="{name : 'app.dashboard'}" 
@@ -13,7 +13,7 @@
             </router-link>
 
             <router-link 
-            :to="{name : 'app.dashboard'}" 
+            :to="{name : 'app.products'}" 
             class="flex items-center p-2 rounded transition-colors hover:bg-black/20 mb-3">
                 <span class="mr-2 " >
                     <ViewListIcon class="w-5" />
