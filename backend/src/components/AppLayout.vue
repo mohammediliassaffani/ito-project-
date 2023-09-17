@@ -7,8 +7,8 @@
         <!-- start content -->
 
         <div class="flex-1">
-            <header class="h-8 shadow bg-white">Header</header>
-            <main>
+            <TopHeader />
+            <main class="p-6" >
                 <router-view></router-view>
             </main>
         </div>
@@ -18,6 +18,7 @@
 
 <script setup>
 import SideBar from './SideBar.vue';
+import TopHeader from './TopHeader.vue';
 </script>
 
 <style scoped></style>
