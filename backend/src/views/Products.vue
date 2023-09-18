@@ -1,11 +1,13 @@
-<template>   
-        <h1>Products</h1>  
+<template>
+  <h1>Products</h1>
 </template>
 
-<script setup>
-
+<script>
+export default {
+  name: "Dashboard"
+}
 </script>
 
-<style>
+<style scoped>
 
 </style>

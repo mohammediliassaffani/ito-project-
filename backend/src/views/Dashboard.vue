@@ -1,15 +1,13 @@
 <template>
-    
-        <h1>Dashboard</h1>
-    
-       
-   
+  <h1>Dashboard</h1>
 </template>
 
-<script setup>
-import GuestLayout from "../components/GuestLayout.vue";
+<script>
+export default {
+  name: "Dashboard"
+}
 </script>
 
-<style>
+<style scoped>
 
 </style>
